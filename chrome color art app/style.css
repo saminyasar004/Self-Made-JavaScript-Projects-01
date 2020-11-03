@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  cursor: default;
+  overflow-x: hidden;
+  font-family: "Helvetica nue", sans-serif;
+}
+
+#canvas {
+  border: 1px solid rebeccapurple;
+  display: block;
+  margin: auto;
+}
+
+.tool-container {
+  width: 100%;
+  height: auto;
+  padding: 5% 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.btn,
+.btnReset {
+  padding: 0.5rem 0.8rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: rebeccapurple;
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 0.1rem;
+  text-transform: capitalize;
+  letter-spacing: 0.04em;
+}
+
+.sizeEl {
+  padding: 0 0.5rem;
+  font-size: 1.1rem;
+}

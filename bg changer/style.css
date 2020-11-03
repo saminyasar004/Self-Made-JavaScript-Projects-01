@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  cursor: default;
+  min-height: 100vh;
+  font-family: "Helvetica nue", sans-serif;
+  overflow-x: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.btn {
+  text-transform: capitalize;
+  background: rebeccapurple;
+  color: #fff;
+  font-size: 1rem;
+  padding: 0.7rem;
+  border: none;
+  border: 5px solid rebeccapurple;
+  outline: none;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  background: rgb(104, 17, 190);
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+.btn:focus {
+  border: 5px solid rgb(150, 79, 221);
+}
+
+.btn:active {
+  box-shadow: 0;
+  transform: translate(2px, 2px);
+}

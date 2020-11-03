@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Deved",
+    "country": "USA",
+    "isProgrammar": true
+  },
+  {
+    "name": "Rafeh Qazi",
+    "country": "Pakistan",
+    "isProgrammar": true
+  },
+  {
+    "name": "Rahid Ahmed",
+    "country": "Bangladesh",
+    "isProgrammar": false
+  },
+  {
+    "name": "Samin Yasar",
+    "country": "Bangladesh",
+    "isProgrammar": true
+  }
+]

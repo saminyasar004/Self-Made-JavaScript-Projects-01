@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booklist App</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <h2>booklist app</h2>
+      <form class="form">
+        <input
+          type="text"
+          class="book-name 1"
+          placeholder="Book Name"
+          required
+        />
+        <input
+          type="text"
+          class="book-author 2"
+          placeholder="Book Author"
+          required
+        />
+        <input
+          type="text"
+          class="book-year 3"
+          placeholder="Book Year"
+          required
+        />
+        <button type="submit" class="btnSubmit">Submit</button>
+      </form>
+    </div>
+
+    <div class="book-list-container">
+      <table class="book-list-table">
+        <thead>
+          <tr>
+            <th>book name</th>
+            <th>book author</th>
+            <th>book year</th>
+          </tr>
+        </thead>
+        <tbody class="book-list-tbody"></tbody>
+      </table>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  cursor: default;
+  overflow-x: hidden;
+  font-family: "Helvetica nue", sans-serif;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.color {
+  width: 100px;
+  height: 50px;
+  padding: 0.3rem;
+  background: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.btn {
+  color: #222;
+  background: #fff;
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin: 2% auto;
+}

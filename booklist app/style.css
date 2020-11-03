@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+body {
+  cursor: default;
+  overflow-x: hidden;
+  min-height: 100vh;
+  font-family: "Helvetica nue", sans-serif;
+}
+
+.form-container {
+  width: 100%;
+  height: auto;
+}
+
+h2 {
+  font-size: 2.4rem;
+  text-transform: capitalize;
+  text-align: center;
+  margin: 2% 0 0 0;
+  color: rebeccapurple;
+}
+
+.form {
+  width: 40%;
+  height: auto;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+input[type="text"] {
+  width: 100%;
+  outline: none;
+  border: 1px solid #ddd;
+  border-radius: 0.2rem;
+  background: transparent;
+  padding: 0.6rem;
+  margin: 3% auto;
+  color: #444;
+  font-size: 0.9rem;
+}
+
+input::placeholder {
+  color: rgba(0, 0, 0, 0.418);
+}
+
+.btnSubmit {
+  padding: 0.7rem 1.1rem;
+  border: none;
+  outline: none;
+  border-radius: 0.2rem;
+  border: 1px solid rebeccapurple;
+  background: rebeccapurple;
+  cursor: pointer;
+  color: #fff;
+  font-size: 0.9rem;
+  letter-spacing: 0.04em;
+}
+
+.book-list-container {
+  width: 100%;
+  height: auto;
+}
+
+.book-list-table {
+  text-align: center;
+  text-transform: capitalize;
+  width: 100%;
+  margin: 1% auto;
+  border-collapse: collapse;
+}
+
+thead {
+  background: rebeccapurple;
+  color: #fff;
+}
+
+thead tr th {
+  padding: 1rem;
+}
+
+tbody tr:nth-child(odd) {
+  background: #dddddd;
+}
+
+tbody tr:nth-child(even) {
+  background: #eee;
+}
+
+tbody tr td {
+  padding: 1rem 0;
+  text-transform: capitalize;
+}

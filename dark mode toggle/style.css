@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  cursor: default;
+  min-height: 100vh;
+  font-family: "Helvetica nue", sans-serif;
+  overflow-x: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: all 0.3s linear;
+}
+
+.body-dark {
+  background: #1f1f1f;
+  color: white;
+}
+
+#checkbox {
+  visibility: hidden;
+}
+
+label {
+  text-transform: capitalize;
+  user-select: none;
+  cursor: pointer;
+  font-size: 0.8rem;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #1f1f1f;
+  display: inline-block;
+  transition: all 0.3s linear;
+}
+
+.body-dark label {
+  background: white;
+}
+
+.toggle-container {
+  position: fixed;
+  top: 5px;
+  right: 10px;
+}
+
+h1 {
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+p {
+  text-align: center;
+  margin: 2% 3%;
+  font-size: 0.9rem;
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+}

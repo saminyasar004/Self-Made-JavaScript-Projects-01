@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn JSON</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      let friends = `[
+        {
+          "name": "Deved",
+          "country": "USA",
+          "isProgrammar": true
+        },
+        {
+          "name": "Rafeh Qazi",
+          "country": "Pakistan",
+          "isProgrammar": true
+        },
+        {
+          "name": "Rahid Ahmed",
+          "country": "Bangladesh",
+          "isProgrammar": false
+        },
+        {
+          "name": "Samin Yasar",
+          "country": "Bangladesh",
+          "isProgrammar": true
+        }
+      ]`;
+      console.log(JSON.parse(friends)[3].name);
+    </script>
+  </body>
+</html>
