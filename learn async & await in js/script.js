@@ -16,16 +16,16 @@ promise
   });
 
 let userLeft = false;
-let seeAd = true;
+let seeAd = false;
 
 function userFlow() {
   new Promise((resolve, reject) => {
-    if (userLeft) {
+    if (!userLeft && !seeAd) {
       resolve(console.log("user is now see your video!"));
-    } else if (seeAd) {
-      reject(console.log("Oops user now see add on your video :("));
-    } else {
+    } else if (userLeft) {
       reject(console.log("damn user dont see your video"));
+    } else if (seeAd) {
+      reject(console.log("Oops user now see add on your video"));
     }
   });
 }
@@ -55,3 +55,32 @@ function responseRequest(response) {
     resolve(`extra information ${response}`);
   });
 }
+
+// normal way
+
+makeRequest("google")
+  .then((response) => {
+    console.log(`response recieved`);
+    return responseRequest(response);
+  })
+  .then((processResponse) => {
+    console.log(processResponse);
+  })
+  .catch((err) => {
+    console.log(err);
+  });
+
+// asyncronous way
+
+async function doUpdate() {
+  try {
+    const response = await makeRequest("google");
+    console.log(`response recieved`);
+    const processResponse = await responseRequest(response);
+    console.log(processResponse);
+    console.log(`finished`);
+  } catch (error) {
+    console.log(error);
+  }
+}
+doUpdate();
