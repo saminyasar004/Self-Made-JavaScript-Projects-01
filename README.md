@@ -16,6 +16,9 @@ index:
 8.  Sound Play
 9.  Toast Notification
 10. Booklist App
+11. Drawing App
+12. Learn JSON
+13. Learn Promise In JavaScript
 
 # Self-Made-JS-Projects
 
