@@ -3,19 +3,19 @@ const sounds = ["applause", "boo", "gasp", "tada", "victory", "wrong"];
 
 // sounds for each function
 sounds.forEach((sound) => {
-// create button for all sounds
+  // create button for all sounds
   const btn = document.createElement("button");
-//   give a class name to button
+  //   give a class name to button
   btn.classList.add("btn");
-//   button text
+  //   button text
   btn.innerText = sound;
-//   append the button
+  //   append the button
   document.body.appendChild(btn);
   btn.addEventListener("click", () => {
-//     when click a once button pause all other sounds
+    //     when click a once button pause all other sounds
     pauseSong();
     document.getElementById(sound).play();
-//     set the sound volume
+    //     set the sound volume
     document.getElementById(sound).volume = 0.05;
   });
 });
