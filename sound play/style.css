@@ -9,4 +9,23 @@ body {
   min-height: 100vh;
   font-family: "Helvetica nue", sans-serif;
   overflow-x: hidden;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-around; */
+  justify-content: center;
+}
+
+.btn {
+  background: rebeccapurple;
+  color: #fff;
+  display: inline-block;
+  margin: 0 2%;
+  border: none;
+  border-radius: 0.2rem;
+  text-transform: capitalize;
+  padding: 0.8rem 1rem;
+  outline: none;
+  letter-spacing: 0.04em;
+  font-size: 0.9rem;
+  cursor: pointer;
 }
