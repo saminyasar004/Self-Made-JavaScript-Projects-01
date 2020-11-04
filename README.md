@@ -19,7 +19,4 @@ index:
 11. Drawing App
 12. Learn JSON
 13. Learn Promise In JavaScript
-
-# Self-Made-JS-Projects
-
-# self-made-js-projects
+14. Zoom Effect
