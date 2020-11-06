@@ -65,10 +65,10 @@ btnGenerateEl.addEventListener("click", getPassword);
 btnCopyEl.addEventListener('click', () => {
   pwinputEl.select();
   document.execCommand('copy');
-  alert('Your password is copied to your clipboard!');
   pwinputEl.value = '';
   uppercaseEl.checked = false;
   lowercaseEl.checked = false;
   numbersEl.checked = false;
   symbolsEl.checked = false;
+  alert('Your password is copied to your clipboard!');
 });
