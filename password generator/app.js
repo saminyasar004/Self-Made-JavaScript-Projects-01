@@ -31,14 +31,14 @@ function getSymbols() {
 }
 
 function getPassword() {
-  let x = '';
+  let finalPwd = '';
   const length = lengthEl.value;
   let i = 0;
   for (i; i < length; i++) {
-    const xs = generatePassword();
-    x += xs;
+    const password = generatePassword();
+    finalPwd += password;
   };
-  pwinputEl.value = x;
+  pwinputEl.value = finalPwd;
 }
 
 function generatePassword() {
