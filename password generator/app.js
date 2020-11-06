@@ -31,9 +31,39 @@ function getSymbols() {
 }
 
 function getPassword() {
-  const x = '';
+  let x = '';
   const length = lengthEl.value;
-  console.log(length);
+  let i = 0;
+  for (i; i < length; i++) {
+    const xs = generatePassword();
+    x += xs;
+  };
+  pwinputEl.value = x;
+}
+
+function generatePassword() {
+  let password = [];
+  if (uppercaseEl.checked) {
+    password.push(getUppercase());
+  }
+    if (lowercaseEl.checked) {
+    password.push(getLowercase());
+  }
+    if (numbersEl.checked) {
+    password.push(getNumbers());
+  }
+  if (symbolsEl.checked) {
+    password.push(getSymbols());
+  }
+  if (!uppercaseEl.checked && !lowercaseEl.checked && !numbersEl.checked && !symbolsEl.checked) return password = [];
+  if (lengthEl.value === 0) return password = [];
+  return password[Math.floor(Math.random() * password.length)];
 }
 
 btnGenerateEl.addEventListener("click", getPassword);
+
+btnCopyEl.addEventListener('click', () => {
+  pwinputEl.select();
+  document.execCommand('copy');
+  pwinputEl.value = '';
+});
