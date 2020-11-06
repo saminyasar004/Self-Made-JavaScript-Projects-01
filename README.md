@@ -20,3 +20,4 @@ index:
 12. Learn JSON
 13. Learn Promise In JavaScript
 14. Zoom Effect
+15. Password Generator
