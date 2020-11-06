@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  cursor: default;
+  min-height: 100vh;
+  font-family: "Helvetica nue", sans-serif;
+  overflow-x: hidden;
+  background: rebeccapurple;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pw-container {
+  width: 350px;
+  height: 300px;
+  padding: 1rem 1rem;
+  background: #ffffff;
+  border-radius: 0.2rem;
+  box-shadow: 3px 6px 5px rgba(0, 0, 0, 0.3);
+}
+
+.pw-header {
+  margin-bottom: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#pw-input {
+  width: 75%;
+  position: relative;
+  border: 1px solid rgb(160, 160, 160);
+  padding: 0.5rem 0.8rem;
+  font-size: 1rem;
+  outline: none;
+}
+
+#btnCopy {
+  padding: 0.6rem 0.8em;
+  text-transform: capitalize;
+  background: rebeccapurple;
+  color: #fff;
+  outline: none;
+  border: none;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+  letter-spacing: 0.04em;
+}
+
+.pw-controle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 4% auto;
+}
+
+label {
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+input {
+  outline: none;
+}
+
+input[type="checkbox"] {
+  cursor: pointer;
+}
+
+#btnGenerate {
+  padding: 0.6rem 0.8em;
+  text-transform: capitalize;
+  background: rebeccapurple;
+  color: #fff;
+  outline: none;
+  border: none;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+  letter-spacing: 0.04em;
+  display: block;
+  margin: 7% auto 0% auto;
+}
