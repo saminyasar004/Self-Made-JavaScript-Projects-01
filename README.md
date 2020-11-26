@@ -1,6 +1,7 @@
 Hello What's up?
 
-In this repository I created some projects using Vanilla Javascript to improve my JavaScript skill.
+In this repository I created some projects using Vanilla JavaScript to improve my JavaScript skill.
+Inspired by https://www.youtube.com/channel/UCeU-1X402kT-JlLdAitxSMA
 
 Samin Yasar..
 
